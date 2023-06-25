@@ -1,5 +1,6 @@
 package com.example.cgpacalculator
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -17,6 +18,8 @@ class Sixth : AppCompatActivity() {
     private lateinit var eighthh: EditText
     private lateinit var resultt: TextView
     private lateinit var calculatee: Button
+    private lateinit var back:Button
+    private lateinit var home:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.sixthsem)
@@ -30,6 +33,16 @@ class Sixth : AppCompatActivity() {
         eighthh = findViewById(R.id.tttt8)
         calculatee = findViewById(R.id.calculate4)
         resultt = findViewById(R.id.result3)
+        back=findViewById(R.id.back6)
+        home=findViewById((R.id.home4))
+        home.setOnClickListener {
+            val srcintent = Intent(this, MainActivity::class.java)
+            startActivity(srcintent)
+        }
+        back.setOnClickListener {
+            val srcintent = Intent(this, Calculation::class.java)
+            startActivity(srcintent)
+        }
         calculatee.setOnClickListener {
             var a = firstt.text.toString().trim().toInt()
             var b = secondd.text.toString().trim().toInt()

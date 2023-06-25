@@ -1,5 +1,6 @@
 package com.example.cgpacalculator
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
@@ -18,6 +19,8 @@ class Firstandsecondd : AppCompatActivity() {
     private lateinit var f18sub:EditText
     private lateinit var firstresult: TextView
     private lateinit var firstcalculate:Button
+    private lateinit var back:Button
+    private lateinit var home:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.phychem)
@@ -31,6 +34,16 @@ class Firstandsecondd : AppCompatActivity() {
         f18sub=findViewById(R.id.text18)
         firstcalculate=findViewById(R.id.calculate11)
         firstresult=findViewById(R.id.result11)
+        back=findViewById(R.id.back3)
+        home=findViewById((R.id.home1))
+        home.setOnClickListener {
+            val srcintent = Intent(this, MainActivity::class.java)
+            startActivity(srcintent)
+        }
+        back.setOnClickListener {
+            val srcintent = Intent(this, Calculation::class.java)
+            startActivity(srcintent)
+        }
         firstcalculate.setOnClickListener{
             var a=f11sub.text.toString().trim().toInt()
             var b=f12sub.text.toString().trim().toInt()

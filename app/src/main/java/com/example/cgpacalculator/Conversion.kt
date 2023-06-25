@@ -1,6 +1,7 @@
 package com.example.cgpacalculator
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -16,6 +17,7 @@ class Conversion:AppCompatActivity() {
     private lateinit var ptocc2:TextView
     private lateinit var sub1:Button
     private lateinit var sub2:Button
+    private lateinit var back:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.conversionf)
@@ -25,6 +27,11 @@ class Conversion:AppCompatActivity() {
         ptocc2=findViewById(R.id.ptoc2)
         sub1=findViewById(R.id.btn1)
         sub2=findViewById(R.id.btn2)
+        back=findViewById(R.id.back1)
+        back.setOnClickListener {
+            val srcintent = Intent(this, MainActivity::class.java)
+            startActivity(srcintent)
+        }
         sub1.setOnClickListener{
             val msg = ctop.text.toString().toDouble()
             val result = (msg - 0.75) * 10

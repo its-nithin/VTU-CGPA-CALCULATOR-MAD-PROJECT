@@ -14,6 +14,7 @@ class Calculation: AppCompatActivity() {
     private lateinit var sixthh:Button
     private lateinit var seventhh:Button
     private lateinit var eighthh:Button
+    private lateinit var back:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.calculation)
@@ -25,6 +26,11 @@ class Calculation: AppCompatActivity() {
         sixthh=findViewById(R.id.sixthsem)
         seventhh=findViewById(R.id.seventhsem)
         eighthh=findViewById(R.id.eightsem)
+        back=findViewById(R.id.back2)
+        back.setOnClickListener {
+            val srcintent = Intent(this, MainActivity::class.java)
+            startActivity(srcintent)
+        }
         phy.setOnClickListener {
             val srcintent = Intent(this, Firstandsecondd::class.java)
             startActivity(srcintent)
