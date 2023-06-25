@@ -8,11 +8,17 @@
 
     <Button
         android:id="@+id/conversion"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="137dp"
-        android:layout_height="54dp"
-        android:text="CONVERSION"
+        android:layout_width="168dp"
+        android:layout_height="59dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/cornerbuttons"
         android:onClick="nextt"
+        android:text="CONVERSION"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="#9E4F4F"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
@@ -22,12 +28,19 @@
 
     <Button
         android:id="@+id/calculation"
-        android:layout_width="134dp"
-        android:layout_height="52dp"
-        android:text="CALCULATE"
+        android:layout_width="168dp"
+        android:layout_height="59dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/cornerbuttons"
         android:onClick="nextt"
+        android:text="CALCULATE"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.526" />
 </androidx.constraintlayout.widget.ConstraintLayout>

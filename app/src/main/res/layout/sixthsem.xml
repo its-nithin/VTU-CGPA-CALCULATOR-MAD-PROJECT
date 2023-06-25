@@ -5,6 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/home4"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:background="@drawable/baseline_home_24"
+        android:hint="."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
     <EditText
         android:id="@+id/tttt2"
         android:layout_width="213dp"
@@ -12,6 +25,7 @@
         android:ems="10"
         android:hint="SUBJECT 2"
         android:inputType="number"
+        android:textStyle="bold"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,6 +40,7 @@
         android:layout_height="55dp"
         android:ems="10"
         android:hint="SUBJECT 1"
+        android:textStyle="bold"
         android:inputType="number"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,6 +57,7 @@
         android:ems="10"
         android:hint="SUBJECT 8"
         android:inputType="number"
+        android:textStyle="bold"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,6 +73,7 @@
         android:ems="10"
         android:hint="SUBJECT 3"
         android:inputType="number"
+        android:textStyle="bold"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,6 +88,7 @@
         android:layout_height="55dp"
         android:ems="10"
         android:hint="SUBJECT 4"
+        android:textStyle="bold"
         android:inputType="number"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -87,6 +105,7 @@
         android:ems="10"
         android:hint="SUBJECT 5"
         android:inputType="number"
+        android:textStyle="bold"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -102,6 +121,7 @@
         android:ems="10"
         android:hint="SUBJECT 6"
         android:inputType="number"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.449"
@@ -118,6 +138,7 @@
         android:hint="SUBJECT 7"
         android:inputType="number"
         android:textAlignment="center"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.449"
@@ -127,9 +148,12 @@
 
     <Button
         android:id="@+id/calculate4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="158dp"
+        android:layout_height="52dp"
+        android:background="@drawable/cornerbuttons"
         android:text="CALCULATE"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.444"
@@ -141,6 +165,7 @@
         android:id="@+id/textView5"
         android:layout_width="92dp"
         android:layout_height="32dp"
+        android:textStyle="bold"
         android:text="CGPA ->"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -155,6 +180,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="0"
+        android:textStyle="bold"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -163,5 +189,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.977" />
+
+    <Button
+        android:id="@+id/back6"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:background="@drawable/baseline_arrow_back_24"
+        android:hint="."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
